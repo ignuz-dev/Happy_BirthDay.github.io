@@ -37,7 +37,7 @@ function init3D() {
   loaderEl.style.display = 'block';
 
   const loader = new GLTFLoader();
-  loader.load('/assets/model.glb', (gltf) => {
+  loader.load('./assets/model.glb', (gltf) => {
     model = gltf.scene;
 
     model.scale.set(0.5, 0.5, 0.5);
